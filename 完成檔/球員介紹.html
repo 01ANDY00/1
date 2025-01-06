@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jordan - 籃球之神</title>
+    <link rel="stylesheet" href="58.css"> <!-- 連結外部CSS檔案 -->
+    <style>
+        /* Style for the popup */
+        #stats-popup {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="main_menu" class="chinese-text">
+            <li><a href="球員介紹.html">球員介紹</a></li>
+            <li><a href="公牛王朝.html">公牛王朝</a></li>
+            <li><a href="I'm back.html">I'm back</a></li>
+            <li><a href="最後一舞">最後一舞</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <img src="下載.jpg" alt="Michael Jordan" width="192" height="262" 
+             onclick="toggleStats()" style="cursor: pointer;">
+        <div id="stats-popup">
+            <strong>麥可·喬丹 (Michael Jordan) 生涯數據：</strong>
+            <ul>
+                <li>總得分：32,292 分</li>
+                <li>場均得分：30.1 分</li>
+                <li>籃板：6,672 個</li>
+                <li>助攻：5,633 次</li>
+                <li>總冠軍：6 次</li>
+                <li>MVP：5 次</li>
+            </ul>
+            <button onclick="toggleStats()" style="margin-top: 10px;">關閉</button>
+        </div>
+    </div>
+
+    <span class="date">圖片出自於網路，(點即圖片查看生涯數據)</span>
+
+    <div id="bulls" class="section">
+        <h2>北卡明日之星</h2>
+        <p>1981年喬丹得到北卡羅來納大學教堂山分校錄取並獲籃球獎學金，主修文化地理學。大學第一年就以場均13.5分，53.4%的投籃命中率的成績獲得大西洋沿岸聯盟的年度最佳新秀獎。</p>
+        <h2>1984選秀探花</h2>
+        <p>1984年喬丹肄業於北卡羅來納大學，並在NBA選秀中以探花（第一輪第三順位）被芝加哥公牛選中。</p>
+    </div>
+
+    <div id="achievements" class="section">
+        <h2>職業生涯</h2>
+        <p>喬丹職業籃球生涯均在NBA聯盟，其中13年效力於芝加哥公牛，最後2年在華盛頓巫師度過，曾三度退休後復出。喬丹是NBA歷史上最具影響力的籃球員，為NBA全球化作出重大貢獻。其15年的職業生涯中，總共獲得6屆NBA總冠軍（兩次三連冠），6屆NBA總決賽最有價值球員，5屆NBA最有價值球員，3屆NBA明星賽最有價值球員，10屆NBA得分王（1987–93蟬連7屆，1996–98蟬連3屆），3屆抄截王，10次入選NBA最佳陣容，14次入選NBA全明星賽，以及1988年NBA年度最佳防守球員。</p>
+    </div>
+
+    <div id="retirement" class="section">
+        <h2>成為90年代的霸主</h2>
+        <p>NBA歷史上，90年代幾乎與喬丹和公牛王朝劃上等號。喬丹的後仰跳投已成為籃球運動的經典技巧之一...</p>
+        <img src="後仰.gif" alt="Magic Johnson" width="350" height="180">  <img src="156.jpg" alt="Magic Johnson" width="313" height="175">
+        <p>在喬丹有如耶穌般強大的表現一舉打下了許多強隊</p>
+        <div class="gallery">
+            <div class="image-wrapper">
+                <img src="強森.jpg" alt="Magic Johnson" width="100" height="150">
+                <p>Magic Johnson<br>Score: 1-4</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="游因.jpg" alt="Patrick Ewing" width="100" height="150">
+                <p>Patrick Ewing<br>Score: 0-4</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="滑翔機.jpg" alt="Clyde Drexler" width="100" height="150">
+                <p>Clyde Drexler<br>Score: 2-4</p>
+            </div>
+            <div class="image-wrapper">
+                <img src="04.jpg" alt="Charles Barkley" width="100" height="150">
+                <p>Charles Barkley<br>Score: 2-4</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleStats() {
+            var popup = document.getElementById('stats-popup');
+            // Toggle the display of the popup
+            if (popup.style.display === 'none' || popup.style.display === '') {
+                popup.style.display = 'block';
+            } else {
+                popup.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
